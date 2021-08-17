@@ -9,5 +9,5 @@
     {#if label}
         <label for={id} class="pl-1 text-gray-500 text-sm">{label}</label>
     {/if}
-    <input {id} {type} {placeholder} on:input class="bg-gray-700 px-4 py-2 rounded outline-none hover:ring-2 hover:ring-gray-500 focus:ring-2 focus:ring-green-400" />
+    <input {id} {type} {placeholder} on:input on:change class="bg-gray-700 px-4 py-2 rounded outline-none hover:ring-2 hover:ring-gray-500 focus:ring-2 focus:ring-green-400" />
 </div>

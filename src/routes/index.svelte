@@ -1,8 +1,6 @@
 <script>
     import Column from '$lib/Column.svelte'
     import Input from '$lib/Input.svelte'
-    import Row from '$lib/Row.svelte';
-    import Button from '$lib/Button.svelte';
     import Grid from '$lib/Grid.svelte'
 
     const interestRate = 0.1;

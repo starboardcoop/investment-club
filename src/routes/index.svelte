@@ -4,7 +4,7 @@
     import Grid from '$lib/Grid.svelte'
 
     const interestRate = 0.1;
-    const calculateEarnings = (contribution) => Number(contribution) * 12 * interestRate;
+    const calculateEarnings = (contribution) => (Number(contribution) * 12 * interestRate).toFixed(2);
     let potentialEarnings = calculateEarnings(20);
 
     function calculate(event) {

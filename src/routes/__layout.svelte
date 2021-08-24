@@ -7,12 +7,14 @@
     import Button from "$lib/Button.svelte";
 </script>
 
-<Nav title="Lending Hands"/>
-<Main>
-    <slot></slot>
-</Main>
-<Footer>
-    <Row>
-        <Button type="ghost"><a href="https://starboard.coop/" target="_blank">Built by Starboard</a></Button>
-    </Row>
-</Footer>
+<div class="flex flex-col min-h-screen">
+    <Nav title="Lending Hands"/>
+    <Main>
+        <slot></slot>
+    </Main>
+    <Footer>
+        <Row>
+            <Button type="ghost"><a href="https://starboard.coop/" target="_blank">Built by Starboard</a></Button>
+        </Row>
+    </Footer>
+</div>

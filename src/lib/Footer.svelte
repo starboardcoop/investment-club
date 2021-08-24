@@ -3,7 +3,7 @@
 </script>
 
 <footer class="text-sm">
-    <Container inset>
+    <Container>
         <slot></slot>
     </Container>
 </footer>

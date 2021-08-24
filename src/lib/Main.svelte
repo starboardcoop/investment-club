@@ -3,7 +3,7 @@
     import Column from "./Column.svelte";
 </script>
 
-<main class="min-h-screen pb-8">
+<main class="flex-grow pb-8">
     <Container inset>
         <Column>
             <slot></slot>

@@ -26,7 +26,7 @@
             <p>With a monthly investment to a local co-operative, you can grow your money while supporting sustainable business.</p>
         </Column>
         <Column>
-            <Input on:input={calculate} on:change={enforceConstraints} label="Monthly Contribution" placeholder="20 - 200"/>
+            <Input on:input={calculate} on:change={enforceConstraints} label="Monthly Contribution" placeholder="20 - 200" type="number"/>
             <div class="flex flex-col gap-2">
                 <div class="pl-1 text-gray-500 text-sm">Potential Annual Earnings</div>
                 <h1>$ {potentialEarnings}</h1>

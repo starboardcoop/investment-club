@@ -1,22 +1,7 @@
 <script>
-    import Column from '$lib/Column.svelte'
-    import Input from '$lib/Input.svelte'
-    import Grid from '$lib/Grid.svelte'
-
-    const interestRate = 0.1;
-    const calculateEarnings = (contribution) => (Number(contribution) * 12 * interestRate).toFixed(2);
-    let potentialEarnings = calculateEarnings(20);
-
-    function calculate(event) {
-        potentialEarnings = calculateEarnings(event.target.value);
-    }
-
-    function enforceConstraints(event) {
-        let contribution = Number(event.target.value);
-        if (contribution < 20) contribution = event.target.value = 20;
-        if (contribution > 200) contribution = event.target.value = 200;
-        calculate(event);
-    }
+    import Column from '$lib/Column.svelte';
+    import Grid from '$lib/Grid.svelte';
+    import Calculator from '$lib/Calculator.svelte';
 </script>
 
 <Column>
@@ -25,12 +10,6 @@
         <Column>
             <p>With a monthly investment to a local co-operative, you can grow your money while supporting sustainable business.</p>
         </Column>
-        <Column>
-            <Input on:input={calculate} on:change={enforceConstraints} label="Monthly Contribution" placeholder="20 - 200" type="number"/>
-            <div class="flex flex-col gap-2">
-                <div class="pl-1 text-gray-500 text-sm">Potential Annual Earnings</div>
-                <h1>$ {potentialEarnings}</h1>
-            </div>
-        </Column>
+        <Calculator />
     </Grid>
 </Column>

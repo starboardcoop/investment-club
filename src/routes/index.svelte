@@ -25,7 +25,7 @@
         <div class="flex flex-row justify-center items-center text-green-400"><Dollar /></div>
         <div class="md:col-span-2 flex flex-col space-y-4">
             <p>Big banks put their money where they think the can get the biggest returns. They also tend to ignore people who don’t already have a lot of money. You probably want your money to be used for socially useful purposes.</p>
-            <p>As a member of our co-op investment club, you get a say in which ventures are good investments for our community.</p>
+            <p>Forget Wall Street. As a member of our co-op investment club, you get a say in which ventures are good investments for Main Street.</p>
         </div>
 
         <div class="flex flex-row justify-center items-center text-green-400"><Users /></div>
